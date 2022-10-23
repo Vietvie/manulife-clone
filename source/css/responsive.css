@@ -1,6 +1,6 @@
 
 /*Tablet*/
-@media only screen and (max-width: 1024px) {
+@media (max-width: 1024px) {
 
     .slide-tittle{
         font-size: 2.5rem;
@@ -13,4 +13,36 @@
         padding-top: 40px;
     }
 
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+    .navbar-left-menu {
+        display: none;
+    }
+    body {
+        margin-left: -80px;
+    }
+    .navbar-left-logo {
+        height: 60px;
+        width: 60px;
+    }
+    .header-container {
+        height: 60px;
+        background-color: #34384b;
+        left: 60px;
+    }
+    .header-container__login {
+        display: none;
+    }
+    .banner-container {
+        display: flex;
+        flex-direction: column;
+        height: 860px;
+    }
+    .teaser-container {
+        margin-top: 0;
+        display: grid;
+        grid-template-rows: repeat(2,minmax(0,1fr));
+    }
 }
