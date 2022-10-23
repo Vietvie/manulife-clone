@@ -1,0 +1,19 @@
+:root {
+    --primary-color: #00a758;
+    --secondary-color: #ec6453;
+    --text-color: #282b3e;
+}
+
+.btn {
+    outline: none;
+    border: none;
+    width: max-content;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 20px 30px;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+}
