@@ -498,27 +498,14 @@ body {
     padding: 60px 40px;
     font-size: 1rem;
     display: grid;
-    grid: 440px 400px 400px 148px / repeat(4,1fr);
+    grid: 440px 400px 400px 148px / repeat(4,minmax(0,1fr));
     gap: 40px 20px;
     width: auto;
     position: relative;
 }
 
-.main-container::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background-color: rgba(255, 255, 255, 0.5);
-    z-index: 2;
-    display: none;
-}
-
 .main-container__item--tittle {
-    flex: 1;
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .main-container__item--tittle h3 {
@@ -546,7 +533,6 @@ body {
     text-align: center;
     align-items: center;
     position: absolute;
-    font-style: normal;
     top: 50%;
     transform: translateY(-50%);
     transition: all linear;
