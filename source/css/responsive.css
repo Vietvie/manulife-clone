@@ -50,6 +50,9 @@
         height: 860px;
     }
     
+    .slide-tittle {
+        font-size: 2rem;
+    }
     .teaser-container {
         margin-top: 0;
         display: grid;
