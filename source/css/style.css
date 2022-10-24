@@ -338,25 +338,14 @@ body {
     padding-right: 12px;
     position: relative;
     padding-top: 10px;
+    background-color: #fafafa;
 }
 
-.teaser-item::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(211, 211, 211,0.2);
-    transition:dislay 0.3s linear;
-    display: block;
+.teaser-item:hover {
+    background-color: #ffffff;
 }
 
-.teaser-item:hover::before {
-    display: none;
-}
-
-.teaser-item i {
+.teaser-item-icon {
     font-size: 2rem;
     padding-bottom: 20px;
 }

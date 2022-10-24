@@ -20,32 +20,70 @@
     .navbar-left-menu {
         display: none;
     }
+
     body {
         margin-left: -80px;
     }
+
     .navbar-left-logo {
         height: 60px;
         width: 60px;
     }
+
     .header-container {
         height: 60px;
         background-color: #34384b;
         left: 60px;
     }
+
     .header-container__login {
         display: none;
     }
+
     .banner-container {
         display: flex;
         flex-direction: column;
-        height: 860px;
+        height: 1020px;
     }
+    
     .teaser-container {
         margin-top: 0;
         display: grid;
         grid-template-rows: repeat(2,minmax(0,1fr));
     }
-    .customer-select {
-        display: none;
+
+    .teaser-item {
+        display: grid;
+        grid-template-areas: "a b b"
+                             "a c c"
+                             "a d d";
+        /* grid-template: repeat(3,1fr) / repeat(3,1fr); */
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .teaser-item-icon {
+        grid-area: a;
+        font-size: 3rem;
+        float: left;
+        padding-bottom: unset;
+        /* align-self: flex-start; */
+        padding: 0 20px 20px 20px;
+    }
+    .teaser-item b {
+        grid-area: b;
+    }
+    .teaser-item p {
+        grid-area: c;
+    }
+    .teaser-item .click-here {
+        grid-area: d;
+        align-self: flex-start;
+    }
+
+    .customer-select__right {
+        display: block;
+        padding-right: unset;
     }
 }
