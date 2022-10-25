@@ -192,6 +192,10 @@ body {
     color: white;
 }
 
+.header__mobile {
+    display: none;
+}
+
 /*Banner*/
 
 .banner-container {

@@ -140,4 +140,22 @@
         flex-direction: column;
         padding: 20px;
     }
+
+    .header__mobile {
+        display: block;
+        color: white;
+        box-sizing: border-box;
+        height: 100%;
+    }
+
+    .header__mobile  i {
+        padding: 20px;
+        font-size: 1.4rem;
+        border-left: #1e212f 1px solid;
+        box-sizing: border-box;
+        line-height: 0.9;
+        display: inline-block;
+        height: 60px;
+        width: 60px;
+    }
 }
