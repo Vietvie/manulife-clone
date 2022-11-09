@@ -168,6 +168,10 @@ body {
     margin-left: 40px;
 }
 
+.header-image--scrolled {
+    filter: brightness(0) saturate(100%) invert(12%) sepia(6%) saturate(4553%) hue-rotate(197deg) brightness(87%) contrast(83%);
+}
+
 .header-container__login {
     margin-right: 40px;
     min-width: 86px;
@@ -194,6 +198,10 @@ body {
 
 .header__mobile {
     display: none;
+}
+
+.header--scrolled {
+    background-color: rgba(255, 255, 255, 0.95);
 }
 
 /*Banner*/

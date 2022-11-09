@@ -44,6 +44,10 @@
         display: none;
     }
 
+    .header-image--scrolled {
+        filter: unset;
+    }
+
     .banner-container {
         display: flex;
         flex-direction: column;
