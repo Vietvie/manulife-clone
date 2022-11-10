@@ -266,6 +266,7 @@ body {
 }
 
 /*Manual Slide*/
+
 .manual-container {
     display: flex;
     position: absolute;
@@ -286,6 +287,27 @@ body {
     z-index: 10;
 }
 
+.auto-banner {
+    display: none;
+    position: absolute;
+    left: 76px;
+    bottom: 40px;
+    justify-content: left;
+    width: 100%;
+    z-index: 1;
+}
+
+
+/* .auto-btn {
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #d3d3d3;
+    background-color: #d3d3d3;
+    cursor: pointer;
+    padding: 5px;
+    margin-right: 20px;
+    z-index: 11;
+} */
 .manual-btn:hover {
     background-color: white;
 }
@@ -298,7 +320,7 @@ body {
 .slide {
     width: 25%;
     height: 100%;
-    transition: all 0.4s linear;
+    transition: all 1s linear;
     position: relative;
 }
 
@@ -349,6 +371,23 @@ body {
 #radio4:checked ~ .slide--first {
     margin-left: -75%;
 }
+
+#radio1:checked ~ .manual-container .manual-btn1 {
+    background-color: white;
+}
+
+#radio2:checked ~ ..manual-container .manual-btn2 {
+    background-color: white;
+}
+
+#radio3:checked ~ .manual-container .manual-btn3 {
+    background-color: white;
+}
+
+#radio4:checked ~ .manual-container .manual-btn4 {
+    background-color: white;
+}
+
 .slide img {
     object-fit: cover;
     height: 100%;

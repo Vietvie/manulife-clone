@@ -20,4 +20,14 @@ document.onscroll = function() {
         headerSubLogin.classList.remove('sublogin--scrolled')
 
     }
-}
+};
+
+var counterSlider = 1;
+
+setInterval(() => {
+    document.getElementById('radio' + counterSlider).checked = true;
+    counterSlider++;
+    if (counterSlider > 4) {
+        counterSlider = 1;
+    }
+}, 5000);
