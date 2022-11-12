@@ -7,8 +7,10 @@ console.log(headerLogin);
 const headerSubLogin = header.querySelector('.sublogin');
 console.log(headerSubLogin);
 
+let oldScroll = 0;
 document.onscroll = function() {
-    if (window.scrollY > 0) {
+    if (window.scrollY - oldScroll > 0) {
+        console.log(window.scrollY)
         header.classList.add('header--scrolled');
         headerLogo.classList.add('header-image--scrolled');
         headerLogin.classList.add('header-login--scrolled')
@@ -18,8 +20,19 @@ document.onscroll = function() {
         headerLogo.classList.remove('header-image--scrolled');
         headerLogin.classList.remove('header-login--scrolled')
         headerSubLogin.classList.remove('sublogin--scrolled')
-
     }
+
+    if (window.scrollY > 0) {
+        console.log(window.scrollY)
+        header.classList.add('header--scrolled');
+        headerLogo.classList.add('header-image--scrolled');
+    } else {
+        header.classList.remove('header--scrolled');
+        headerLogo.classList.remove('header-image--scrolled');
+    }
+
+
+    oldScroll = window.scrollY;
 };
 
 var counterSlider = 1;
