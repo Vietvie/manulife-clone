@@ -10,7 +10,6 @@ console.log(headerSubLogin);
 let oldScroll = 0;
 document.onscroll = function() {
     if (window.scrollY - oldScroll > 0) {
-        console.log(window.scrollY)
         header.classList.add('header--scrolled');
         headerLogo.classList.add('header-image--scrolled');
         headerLogin.classList.add('header-login--scrolled')
@@ -23,7 +22,6 @@ document.onscroll = function() {
     }
 
     if (window.scrollY > 0) {
-        console.log(window.scrollY)
         header.classList.add('header--scrolled');
         headerLogo.classList.add('header-image--scrolled');
     } else {
@@ -44,3 +42,12 @@ setInterval(() => {
         counterSlider = 1;
     }
 }, 5000);
+
+
+//Customer selector
+
+const customerSelectLink = document.querySelector('.customer-select__right--selectbox');
+console.log(customerSelectLink);
+customerSelectLink.onclick = function(e) {
+    e.preventDefault();
+}
