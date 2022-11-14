@@ -47,7 +47,11 @@ setInterval(() => {
 //Customer selector
 
 const customerSelectLink = document.querySelector('.customer-select__right--selectbox');
-console.log(customerSelectLink);
 customerSelectLink.onclick = function(e) {
     e.preventDefault();
+    customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'block';
+}
+
+customerSelectLink.onblur = function() {
+    customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
 }

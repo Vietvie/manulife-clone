@@ -560,9 +560,9 @@ body {
     background-color: #ececec;
 }
 
-.customer-select__right--selectbox:focus .customer__right-selectbox-submenu {
+/* .customer-select__right--selectbox:focus .customer__right-selectbox-submenu {
     display: block;
-}
+} */
 
 .customer-select__right--selectbox:focus::after{
     transform: rotate(180deg);
