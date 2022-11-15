@@ -376,7 +376,7 @@ body {
     background-color: white;
 }
 
-#radio2:checked ~ ..manual-container .manual-btn2 {
+#radio2:checked ~ .manual-container .manual-btn2 {
     background-color: white;
 }
 

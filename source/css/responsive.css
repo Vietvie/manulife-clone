@@ -162,4 +162,36 @@
         height: 60px;
         width: 60px;
     }
+
+    .feature-item {
+        display: block;
+        height: 688px;
+    }
+
+    .feature-item__tittle {
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+    }
+
+    .feature-item__tittle b {
+        font-weight: 400;
+    }
+    
+    .feature-content-container {
+        width: 100%;
+        height: 440px;
+        overflow: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+    }
+
+    .feature-item__content {
+        min-width: 245px;
+        margin-right: 20px;
+    }
+
+
 }
