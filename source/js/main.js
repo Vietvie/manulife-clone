@@ -55,3 +55,36 @@ customerSelectLink.onclick = function(e) {
 customerSelectLink.onblur = function() {
     customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
 }
+
+//Feature Slider
+
+let pressed = false;
+let startX = 0;
+const featureContentContainerSs = document.querySelectorAll('.feature-slider-moblie');
+console.log(featureContentContainerSs)
+
+featureContentContainerSs.forEach(function(item) {
+    item.addEventListener('mousedown', function(e) {
+        pressed = true;
+        startX = e.clientX
+        console.log(startX)
+    })
+    
+    item.addEventListener('mouseleave', function(e) {
+        pressed = false;
+    })
+    
+    window.addEventListener('mouseup', function(e) {
+        pressed = false;
+    })
+    
+    item.addEventListener('mousemove', function(e) {
+        if (!pressed) {
+            return
+        }
+        this.scrollLeft += startX - e.clientX;
+    }) 
+})
+
+
+

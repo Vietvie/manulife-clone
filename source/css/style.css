@@ -815,8 +815,8 @@ body {
 .feature-item {
     display: flex;
     height: 440px;
-    justify-content: space-between;
     padding-bottom: 40px;
+    justify-content: space-between;
 }
 
 .feature-item__tittle {
@@ -880,6 +880,7 @@ body {
     position: relative;
     transition: all 0.4s linear;
     width: calc(33.33333% - 13.33333px);
+    user-select: none;
 }
 
 .feature-item__content--tittle {
@@ -1010,6 +1011,14 @@ body {
 .feature-item__content--r4 i {
     padding-right: 20px;
     font-size: 2.5rem;
+}
+
+.feature-radio {
+    display: none;
+}
+
+.feature-content__slider {
+    display: none;
 }
 
 

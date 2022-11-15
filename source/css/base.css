@@ -1,7 +1,7 @@
 :root {
     --primary-color: #00a758;
     --secondary-color: #ec6453;
-    --text-color: #282b3e;
+    --text-color: rgb(40, 43, 62);
 }
 
 .btn {
