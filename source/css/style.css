@@ -860,8 +860,13 @@ body {
     
 }
 
+.feature-content-container {
+    width: calc(75% - 5px);
+    display: flex;
+    justify-content: space-between;
+}
+
 .feature-item__content {
-    width: calc(25% - 15px);
     color: var(--text-color);
     padding: 20px;
     display: flex;
@@ -874,6 +879,7 @@ body {
     box-sizing: border-box;
     position: relative;
     transition: all 0.4s linear;
+    width: calc(33.33333% - 13.33333px);
 }
 
 .feature-item__content--tittle {
