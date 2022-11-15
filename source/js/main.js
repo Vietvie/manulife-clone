@@ -1,3 +1,4 @@
+//Header Scroll
 const header = document.querySelector('.header-container');
 console.log(header)
 const headerLogo = header.querySelector('.header-image');
@@ -45,7 +46,6 @@ setInterval(() => {
 
 
 //Customer selector
-
 const customerSelectLink = document.querySelector('.customer-select__right--selectbox');
 customerSelectLink.onclick = function(e) {
     e.preventDefault();

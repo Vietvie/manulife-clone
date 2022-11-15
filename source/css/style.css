@@ -804,6 +804,210 @@ body {
     text-overflow: ellipsis;
 }
 
+/*Feature*/
+.feature-container {
+    margin-left: 80px;
+    padding: 60px 40px;
+    font-size: 1rem;
+    width: auto;
+    
+}
+.feature-item {
+    display: flex;
+    height: 440px;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.feature-item__tittle {
+    width: calc(25% - 15px);
+    padding-top: 20px;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.feature-item__tittle p {
+    line-height: 1.4;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+.feature-item__tittle-moreinfo {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+.feature-item__tittle-moreinfo i {
+    position: absolute;
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+    
+}
+
+.feature-item__tittle-moreinfo:hover i {
+    font-size: 1.4rem;
+    left: -2px;
+}
+
+.feature-item__tittle-moreinfo b {
+    padding-left: 40px;
+    color: var(--text-color);
+    
+}
+
+.feature-item__content {
+    width: calc(25% - 15px);
+    color: var(--text-color);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #202336;
+    background-color: rgb(255 255 255);
+    border: 1px solid #ededed;
+    transition: all 0.2s linear;
+    box-sizing: border-box;
+    position: relative;
+    transition: all 0.4s linear;
+}
+
+.feature-item__content--tittle {
+    flex: 1;
+}
+
+.feature-item__content--tittle-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feature-item__content--tittle-top i {
+    font-size: 1.2rem;
+    color: var(--secondary-color);
+}
+
+.feature-item__content--tittle-top b {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 0.9rem;
+}
+
+.feature-item__content-icon {
+    flex: 1;
+    font-size: 3.5rem;
+}
+
+.feature-item__content p {
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.feature-item__content:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 10px 10px rgba(211, 211, 211,0.8);
+}
+
+.feature-item__content img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.feature-item__content h4 {
+    font-weight: bold;
+    z-index: 1;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.feature-item__content span {
+    z-index: 1;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.feature-item__content--our-company {
+    background-color: var(--primary-color);
+}
+
+.feature-item__content--prize {
+    background-color: #0000c1;
+}
+
+.feature-item__content--declare span {
+    color: var(--text-color);
+}
+
+.feature-item__content strong {
+    font-weight: bold;
+}
+
+.feature-item-r3, .feature-item-r2 {
+    height: 400px;
+}
+.feature-item__content-r3 i {
+    font-size: 3.5rem;
+    padding: 50px 0 80px;
+}
+
+.feature-item-r4 {
+    height: 148px;
+}
+
+.feature-item__content--r4 {
+    max-height: 110px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+.feature-item__content--r4:hover {
+    border: 1px solid var(--primary-color);
+    transform: unset;
+    box-shadow: unset;
+}
+
+.feature-item__content--r4 h4 {
+    color: var(--text-color);
+    font-size: 1.2rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-weight: 400;
+}
+
+.feature-item__content--r4 i {
+    padding-right: 20px;
+    font-size: 2.5rem;
+}
+
+
+
 /*Footer*/
 
 .footer-container {
