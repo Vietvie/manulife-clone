@@ -69,19 +69,16 @@
                              "a c c"
                              "a d d";
         grid-template-columns: 1fr 3fr 1fr;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding: 40px 20px 40px 40px;
     }
+
     .teaser-item-icon {
         grid-area: a;
         font-size: 3rem;
         float: left;
         padding-bottom: unset;
-        /* align-self: flex-start; */
-        padding: 0 20px 20px 20px;
     }
+
     .teaser-item b {
         grid-area: b;
     }
@@ -90,7 +87,7 @@
     }
     .teaser-item .click-here {
         grid-area: d;
-        align-self: flex-start;
+        align-self: flex-end;
     }
 
     .main-container {
@@ -178,10 +175,11 @@
     }
 
     .header__mobile {
-        display: block;
+        display: flex;
         color: white;
         box-sizing: border-box;
         height: 100%;
+        justify-content: center;
     }
 
     .header__mobile  i {
@@ -193,6 +191,8 @@
         display: inline-block;
         height: 60px;
         width: 60px;
+        text-align: center;
+        cursor: pointer;
     }
 
     .feature-container {

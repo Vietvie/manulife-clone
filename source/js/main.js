@@ -101,8 +101,6 @@ footerList.forEach(function(item) {
             item.querySelector('ul').style.display = 'none';
             iconElement.style.transform = 'translateY(-50%)'
         }
-
-
     }
 
 })
