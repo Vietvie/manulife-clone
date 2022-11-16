@@ -49,12 +49,12 @@ setInterval(() => {
 const customerSelectLink = document.querySelector('.customer-select__right--selectbox');
 customerSelectLink.onclick = function(e) {
     e.preventDefault();
-    customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'block';
+    // customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'block';
 }
 
 customerSelectLink.onblur = function(e) {
     e.preventDefault()
-    customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
+    // customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
 }
 
 //Feature Slider
