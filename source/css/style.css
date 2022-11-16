@@ -27,7 +27,7 @@ body {
 }
 .navbar-left-logo {
     background-color: #00a758;
-    height: 80px;
+    min-height: 80px;
     width: 80px;
     display: flex;
     z-index: 1000;
@@ -59,6 +59,10 @@ body {
     font-size: 0.75rem;
     text-align: center;
     position: relative;
+}
+
+.navbar-left-menu__link-skip-menu {
+    display: none;
 }
 
 
@@ -547,7 +551,7 @@ body {
     line-height: 1.6;
     font-weight: 400;
     display: none;
-    z-index: 4;
+    z-index: 100;
 }
 
 .customer__right-selectbox-submenu li {

@@ -52,7 +52,8 @@ customerSelectLink.onclick = function(e) {
     customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'block';
 }
 
-customerSelectLink.onblur = function() {
+customerSelectLink.onblur = function(e) {
+    e.preventDefault()
     customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
 }
 
@@ -104,3 +105,19 @@ footerList.forEach(function(item) {
     }
 
 })
+
+//Menu Mobile
+const mobileMenu = document.querySelector('.navbar-left-menu')
+const moblieIconMenu = document.querySelector('.header__mobile-menu')
+let counter = 0
+moblieIconMenu.onclick = function(e) {
+    if (counter % 2 === 0) {
+        counter++
+        mobileMenu.style.transform = 'translateX(0)'
+    } else {
+        counter++
+        mobileMenu.style.transform = 'translateX(100%)'
+    }
+    console.log(counter)
+   
+}
