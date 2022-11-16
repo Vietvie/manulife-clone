@@ -47,14 +47,22 @@ setInterval(() => {
 
 //Customer selector
 const customerSelectLink = document.querySelector('.customer-select__right--selectbox');
-customerSelectLink.onclick = function(e) {
-    e.preventDefault();
-    // customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'block';
-}
 
-customerSelectLink.onblur = function(e) {
-    e.preventDefault()
-    // customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
+let countSelect = 0
+customerSelectLink.addEventListener('click', function(e){
+    if (countSelect === 0) {
+        countSelect = 1
+        e.preventDefault();
+        customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'block';
+    } else {
+        countSelect = 0
+        e.preventDefault();
+        customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
+    }
+})
+
+customerSelectLink.onblur = function() {
+    customerSelectLink.querySelector('.customer__right-selectbox-submenu').style.display = 'none';
 }
 
 //Feature Slider

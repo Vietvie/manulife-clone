@@ -569,9 +569,9 @@ body {
     transform: rotate(180deg);
 }
 
-.customer-select__right--selectbox:focus .customer__right-selectbox-submenu {
+/* .customer-select__right--selectbox:focus .customer__right-selectbox-submenu {
     display: block;
-}
+} */
 
 /*Main Container*/
 
