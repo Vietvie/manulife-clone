@@ -560,10 +560,6 @@ body {
     background-color: #ececec;
 }
 
-/* .customer-select__right--selectbox:focus .customer__right-selectbox-submenu {
-    display: block;
-} */
-
 .customer-select__right--selectbox:focus::after{
     transform: rotate(180deg);
 }
@@ -1040,6 +1036,10 @@ body {
 .footer-container__r1--list {
     padding-right: 20px;
     flex: 1;
+}
+
+.footer-container__r1--list i {
+    display: none;
 }
 
 .footer-container__r1 h4 {
