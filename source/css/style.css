@@ -70,8 +70,9 @@ body {
     background-color: #1a1c28;
 }
 
-.navbar-left-menu__link svg {
+.navbar-left-menu__link i {
     margin-bottom: 10px;
+    font-size: 1rem;
 }
 
 .navbar-left-menu__submenu {

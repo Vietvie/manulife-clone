@@ -105,7 +105,7 @@
     .banner-container {
         display: flex;
         flex-direction: column;
-        height: 860px;
+        height: 960px;
     }
     
     .slide-tittle {

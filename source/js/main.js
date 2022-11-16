@@ -112,19 +112,14 @@ const moblieIconMenu = document.querySelector('.header__mobile-menu')
 let currentWidth = window.innerWidth
 console.log(currentWidth)
 let counter = 0
-document.body.classList.toggle('lock-scroll')
 
-if (currentWidth < 768) {
-    moblieIconMenu.onclick = function(e) {
-        if (counter % 2 === 0) {
-            counter++
-            mobileMenu.style.transform = 'translateX(0)'
-        } else {
-            counter++
-            mobileMenu.style.transform = 'translateX(100%)'
-        }
-        console.log(counter)
+moblieIconMenu.onclick = function(e) {
+    if (counter % 2 === 0) {
+        counter++
+        mobileMenu.style.transform = 'translateX(0)'
+    } else {
+        counter++
+        mobileMenu.style.transform = 'translateX(100%)'
     }
-} else {
-    mobileMenu.style.transform = 'translateX(0)'
+    console.log(counter)
 }
