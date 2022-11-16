@@ -88,23 +88,23 @@ featureContentContainerSs.forEach(function(item) {
 
 //Footer mobile
 
-// const footerList = document.querySelectorAll('.footer-container__r1--list');
+const footerList = document.querySelectorAll('.footer-container__r1--list');
 
-// footerList.forEach(function(item) {
-//     item.onclick = function() {
-//         let ulStyle = window.getComputedStyle(item.querySelector('ul')).display;
-//         let iconElement = item.querySelector('i')
-//         console.log(iconElement)
-//         if (ulStyle === 'none') {
-//             item.querySelector('ul').style.display = 'block';
-//             iconElement.style.transform = 'translateY(-50%) rotateX(180deg)'
-//         } else {
-//             item.querySelector('ul').style.display = 'none';
-//             iconElement.style.transform = 'translateY(-50%)'
-//         }
-//     }
+footerList.forEach(function(item) {
+    item.onclick = function() {
+        let ulStyle = window.getComputedStyle(item.querySelector('ul')).display;
+        let iconElement = item.querySelector('i')
+        console.log(iconElement)
+        if (ulStyle === 'none') {
+            item.querySelector('ul').style.display = 'block';
+            iconElement.style.transform = 'translateY(-50%) rotateX(180deg)'
+        } else {
+            item.querySelector('ul').style.display = 'none';
+            iconElement.style.transform = 'translateY(-50%)'
+        }
+    }
 
-// })
+})
 
 //Menu Mobile
 const mobileMenu = document.querySelector('.navbar-left-menu')
