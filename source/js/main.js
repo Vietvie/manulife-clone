@@ -109,15 +109,22 @@ footerList.forEach(function(item) {
 //Menu Mobile
 const mobileMenu = document.querySelector('.navbar-left-menu')
 const moblieIconMenu = document.querySelector('.header__mobile-menu')
+let currentWidth = window.innerWidth
+console.log(currentWidth)
 let counter = 0
-moblieIconMenu.onclick = function(e) {
-    if (counter % 2 === 0) {
-        counter++
-        mobileMenu.style.transform = 'translateX(0)'
-    } else {
-        counter++
-        mobileMenu.style.transform = 'translateX(100%)'
+document.body.classList.toggle('lock-scroll')
+
+if (currentWidth < 768) {
+    moblieIconMenu.onclick = function(e) {
+        if (counter % 2 === 0) {
+            counter++
+            mobileMenu.style.transform = 'translateX(0)'
+        } else {
+            counter++
+            mobileMenu.style.transform = 'translateX(100%)'
+        }
+        console.log(counter)
     }
-    console.log(counter)
-   
+} else {
+    mobileMenu.style.transform = 'translateX(0)'
 }
