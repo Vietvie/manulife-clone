@@ -167,6 +167,10 @@
         position: relative;
     }
 
+    .footer-container__r1--list:hover ul {
+        display: block;
+    }
+
 
     .footer-container__r1--list:not(:last-child) {
         border-bottom: 1px solid #1e212f;
